@@ -1,0 +1,48 @@
+name: krishi_seva
+description: Flutter app for KRISHI SEVA connecting to Node backend.
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.7.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  geolocator: ^11.1.0
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.3.3
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  lottie: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - logo.png
+    - slash.png
+
+# Native splash configuration (temporary brand color until logo provided)
+flutter_native_splash:
+  color: "#0b1f0f" # matches --bg
+  image: slash.png
+  android_12:
+    color: "#0b1f0f"
+    image: slash.png
+  web: false
+
+# App icon (will use default until a logo is provided). Update when logo path is ready.
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path_android: "logo.png"
+  min_sdk_android: 21
